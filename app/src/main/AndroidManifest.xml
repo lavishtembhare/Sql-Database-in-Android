@@ -21,6 +21,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AddEditContactActivity" />
+        <activity android:name=".DatabaseHelper"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".Contact"
+            tools:ignore="Instantiatable" />
     </application>
 
 </manifest>

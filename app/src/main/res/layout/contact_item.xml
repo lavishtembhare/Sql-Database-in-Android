@@ -3,71 +3,57 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="4dp"
-    app:cardCornerRadius="8dp"
-    app:cardElevation="4dp">
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:padding="12dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="1">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <TextView
+                android:id="@+id/tvName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ID: "
+                android:text="Name"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvContactId"
+                android:id="@+id/tvPhone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1" />
+                android:text="Phone"
+                android:textSize="16sp"
+                android:textColor="#555" />
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="4dp">
+        <ImageButton
+            android:id="@+id/btnEdit"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_edit"
+            android:contentDescription="Edit"
+            app:tint="@color/black" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Name: "
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/tvContactName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Contact Name" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="4dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Phone: "
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/tvContactPhone"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1234567890" />
-        </LinearLayout>
-
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_delete"
+            android:contentDescription="Delete"
+            app:tint="@android:color/holo_red_dark" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
