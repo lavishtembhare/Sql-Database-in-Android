@@ -66,17 +66,6 @@
     <li>RecyclerView</li>
     <li>Material Components</li>
   </ul>
-
-  <h2>🖼️ Screenshots</h2>
-  <div class="screenshot">
-    <div>
-      <strong>Contact List</strong><br>
-      <img src="screenshots/contact_list.png" alt="Contact List">
-    </div>
-    <div>
-      <strong>Add/Edit Contact</strong><br>
-      <img src="screenshots/add_edit_contact.png" alt="Add/Edit Contact">
-    </div>
   </div>
 
   <h2>🚀 Getting Started</h2>
@@ -88,7 +77,7 @@
   </ul>
 
   <h3>Installation</h3>
-  <pre><code>git clone https://github.com/yourusername/sqlite-contact-crud.git</code></pre>
+  <pre><code>git clone https://github.com/lavishtembhare/Sql-Database-in-Android.git</code></pre>
   <ol>
     <li>Open the project in <strong>Android Studio</strong></li>
     <li>Click <strong>Run ▶️</strong> on your emulator or Android device</li>
